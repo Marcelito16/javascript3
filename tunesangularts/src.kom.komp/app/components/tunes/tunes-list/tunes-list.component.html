@@ -1,0 +1,10 @@
+<ul class="tunes-list">
+	<li *ngFor="let song of songs">
+		{{ song | json }}
+	</li>
+</ul>
+
+<p *ngIf="newSong">
+	new song:
+	<strong>{{ newSong }}</strong>
+</p>

@@ -1,0 +1,11 @@
+<h2>🔥 🎶 🔥</h2>
+
+<form (keydown.enter)="getMusic(songInput.value)">
+	<input #songInput type="text" />
+</form>
+
+<ul class="tunes-list">
+	<li *ngFor="let song of songs">
+		{{ song | json }}
+	</li>
+</ul>
